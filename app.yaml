@@ -1,0 +1,14 @@
+# AppEngine configuration for deploying with serve
+# this should NOT be used for production, using falcon host is the prefered way
+# to deploy applications, see https://socketry.github.io/falcon/guides/deployment/index#falcon-hosts
+runtime: ruby33
+
+entrypoint: bundle exec falcon serve --port $PORT --bind http://0.0.0.0
+
+handlers:
+  # Redirect http -> https
+- url: /.*
+  secure: always
+  redirect_http_response_code: 301
+  script: auto
+
