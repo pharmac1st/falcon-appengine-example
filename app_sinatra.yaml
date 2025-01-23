@@ -1,0 +1,6 @@
+runtime: ruby33
+
+# The sinatra default host is 0.0.0.0,
+# so not needed here.
+entrypoint: bundle exec ruby sinatra_app.rb -s falcon -p $PORT
+service: sinatra-falcon

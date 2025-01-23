@@ -9,3 +9,11 @@ This example requires gcloud CLI installed and a gcloud project created, it can 
 ```bash
 gcloud app deploy app_host.yaml
 ```
+
+## Webservers
+
+There are examples currently for:
+- [sinatra](https://github.com/sinatra/sinatra)
+  see (`app_sinatra.yaml`)
+- [utopia](https://github.com/socketry/utopia)
+

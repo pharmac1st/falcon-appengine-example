@@ -1,0 +1,6 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>Hello from AppEngine, served from <a href="https://github.com/socketry/falcon">falcon</a>.</p>
+  </body>
+</html>
